@@ -1,11 +1,9 @@
 **Narrow Precision Training**
 * [Quantized Training in FP4(8)][qt]: *Concepts and Reference Pytorch Implementation using cuBLASLt and Microxcaling.*
-  
 * [Unofficial][nvfp4-bench] and Early Benchmark of Nvidia's NVFP4 Training on Blackwell 8xB200.
 
 **Distributed & Parallel**
 * [Megatron, Transformed!][mtuts] *A Hands-on Megatron-LM Tutorial on Replicating Empirical Trends in Distributed Training and Model Parallelism*.
-  
 * Quick [Visual][mlperf-t5.1-rd] Rundown on MLPerf v5.1 Training, *new Llama3.1-8B, Flux.1 only*.
    
 **Model Optimization for Efficient Inference**
