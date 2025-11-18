@@ -1,6 +1,7 @@
 **Narrow Precision Training**
 * [Quantized Training in FP4(8)][qt]: *Concepts and Reference Pytorch Implementation using cuBLASLt and Microxcaling.*
 * [Unofficial][nvfp4-bench] and Early Benchmark of Nvidia's NVFP4 Training on Blackwell 8xB200.
+* PoC [nvfp4 forward + mxfp8 backward recipe][nv4f_mx8b_pr] in *Transformer Engine*, *[faster][faster-qat]* than nvfp4-QAT.
 
 **Distributed & Parallel**
 * [Megatron, Transformed!][mtuts] *A Hands-on Megatron-LM Tutorial on Replicating Empirical Trends in Distributed Training and Model Parallelism*.
@@ -32,3 +33,5 @@
 [dhub]: https://hub.docker.com/repositories/vuiseng9
 [hf]: https://huggingface.co/vuiseng9
 [mlperf-t5.1-rd]: https://github.com/vuiseng9/mlperf-t5.1-rundown
+[nv4f_mx8b_pr]: https://github.com/vuiseng9/TransformerEngine/pull/5
+[faster-qat]: https://github.com/vuiseng9/faster-qat
