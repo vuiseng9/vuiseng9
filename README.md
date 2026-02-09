@@ -1,12 +1,15 @@
 **Narrow Precision Training**
-* [Quantized Training in FP4(8)][qt]: *Concepts and Reference Pytorch Implementation using cuBLASLt and Microxcaling.*
+* [Quantized Training in FP4(8)][qt]: *Concepts and Pytorch Implementation using cuBLASLt and Microxcaling.*
 * [Unofficial][nvfp4-bench] and Early Benchmark of Nvidia's NVFP4 Training on Blackwell 8xB200.
 * PoC [nvfp4 forward + mxfp8 backward recipe][nv4f_mx8b_pr] in *Transformer Engine*, *[faster][faster-qat]* than nvfp4-QAT.
 
 **Distributed & Parallel**
-* [Megatron, Transformed!][mtuts] *A Hands-on Megatron-LM Tutorial on Replicating Empirical Trends in Distributed Training and Model Parallelism*.
+* [Megatron, Transformed!][mtuts] *A Hands-on Tutorial on Replicating Empirical Trends in Distributed Training and Model Parallelism. DP → ZeRO → TP → SP → CP → PP → VPP → EP*
 * Quick [Visual][mlperf-t5.1-rd] Rundown on MLPerf Training v5.1 (Nov'25), *new Llama3.1-8B, Flux.1 only*.
-   
+
+**Modeling Front**
+* [moe-lab][moelab]: *Rigorous MoE design ablations you can run at home. Notably, DeepSeek-V3 Router load-biasing turns out to be [surprisingly effective][moelab-gif].*
+  
 **Model Optimization for Efficient Inference**
 * Post-Training Statistical Calibration for Higher Activation Sparsity,
     <small><i>[[ENLSP 2024 Spotlight 7](https://neurips2024-enlsp.github.io/), 
@@ -15,7 +18,7 @@
     [Code](https://github.com/IntelLabs/SCAP),
     [Integrated](https://github.com/openvinotoolkit/nncf/blob/develop/src/nncf/experimental/torch/sparsify_activations/ActivationSparsity.md)]  </i></small>
 
-* *Pre-LLM explosion* — [Unified HuggingFace Trainer][mlperf-i-v3-jpqd] for Joint Pruning, Quantization, and Distillation ([JPQD][nncf-jpqd-pr]), integrating OpenVINO NNCF and runtime. 16× more BERT serving throughput on Xeon Sapphire Rapids. See [MLPerf][jpqd-bench] Inference 3.0 submission. [Applicable][jpqd-examples] vision, audio models.
+* *Pre-LLM explosion* — [Unified HuggingFace Trainer][mlperf-i-v3-jpqd] for Joint [Pruning][nncf-mvmt], Quantization, and Distillation ([JPQD][nncf-jpqd-pr]), integrating OpenVINO NNCF and runtime. 16× more BERT serving throughput on Xeon Sapphire Rapids. See [MLPerf][jpqd-bench] Inference 3.0 submission. [Applicable][jpqd-examples] to vision, audio models.
 
 *Perhaps useful: [dlbp][dlbp], [dockerhub][dhub], [HuggingFace][hf]*
 
@@ -35,3 +38,6 @@
 [mlperf-t5.1-rd]: https://github.com/vuiseng9/mlperf-t5.1-rundown
 [nv4f_mx8b_pr]: https://github.com/vuiseng9/TransformerEngine/pull/5
 [faster-qat]: https://github.com/vuiseng9/faster-qat
+[moelab]: https://github.com/vuiseng9/moe-lab
+[moelab-gif]: https://github.com/vuiseng9/moe-lab/blob/main/assets/compare_lb_strategy_heatmaps.gif
+[nncf-mvmt]: https://github.com/openvinotoolkit/nncf/blob/release_v2190/src/nncf/experimental/torch/sparsity/movement/MovementSparsity.md
