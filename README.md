@@ -8,7 +8,7 @@
 * Quick [Visual][mlperf-t5.1-rd] Rundown on MLPerf Training v5.1 (Nov'25), *new Llama3.1-8B, Flux.1 only*.
 
 **Modeling Front**
-* [moe-lab][moelab]: *Rigorous MoE design ablations you can run at home. Notably, DeepSeek-V3 Router load-biasing turns out to be [surprisingly effective][moelab-gif].*
+* [moe-lab][moelab]: *Rigorous MoE design ablations you can run at home. Notably, DeepSeek-V3 Router load-biasing turns out to be [surprisingly effective][moelab-gif]. Implemented autograd for `F.grouped_mm`, >20% [speedup][moelab-groupmm] on average.*
   
 **Model Optimization for Efficient Inference**
 * Post-Training Statistical Calibration for Higher Activation Sparsity,
@@ -40,4 +40,5 @@
 [faster-qat]: https://github.com/vuiseng9/faster-qat
 [moelab]: https://github.com/vuiseng9/moe-lab
 [moelab-gif]: https://github.com/vuiseng9/moe-lab/blob/main/assets/compare_lb_strategy_heatmaps.gif
+[moelab-groupmm]: https://github.com/vuiseng9/moe-lab/blob/main/assets/grouped_vs_looped_mm.png
 [nncf-mvmt]: https://github.com/openvinotoolkit/nncf/blob/release_v2190/src/nncf/experimental/torch/sparsity/movement/MovementSparsity.md
