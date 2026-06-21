@@ -4,7 +4,6 @@
 
 **Narrow Precision Training**
 * [Quantized Training in FP4(8)][qt]: *Concepts and Pytorch Implementation using cuBLASLt and Microxcaling.*
-* [Unofficial][nvfp4-bench] and Early Benchmark of Nvidia's NVFP4 Training on Blackwell 8×B200.
 * PoC [nvfp4 forward + mxfp8 backward recipe][nv4f_mx8b_pr] in *Transformer Engine*, *[faster][faster-qat]* than nvfp4-QAT.
 
 **Modeling Front**
