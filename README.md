@@ -1,11 +1,11 @@
+**Distributed & Parallel**
+* [Megatron, Transformed!][mtuts] *A Hands-on Tutorial on Replicating Empirical Trends in Distributed Training and Model Parallelism. 60+ runs across DP → ZeRO → TP → SP → CP → PP → VPP → EP.* 
+* MLPerf Training Rundowns: [v5.1 (Nov'25)][mlperf-t5.1-rd]  on *Llama 3.1-8B, Flux.1*, and [v6.0 (June'26)][mlperf-t6.0-rd] on newly-added MoE *DeepSeek-V3, GPT-OSS*.
+
 **Narrow Precision Training**
 * [Quantized Training in FP4(8)][qt]: *Concepts and Pytorch Implementation using cuBLASLt and Microxcaling.*
 * [Unofficial][nvfp4-bench] and Early Benchmark of Nvidia's NVFP4 Training on Blackwell 8×B200.
 * PoC [nvfp4 forward + mxfp8 backward recipe][nv4f_mx8b_pr] in *Transformer Engine*, *[faster][faster-qat]* than nvfp4-QAT.
-
-**Distributed & Parallel**
-* [Megatron, Transformed!][mtuts] *A Hands-on Tutorial on Replicating Empirical Trends in Distributed Training and Model Parallelism. 60+ runs across DP → ZeRO → TP → SP → CP → PP → VPP → EP.*
-* Quick [Visual][mlperf-t5.1-rd] Rundown on MLPerf Training v5.1 (Nov'25), *new Llama3.1-8B, Flux.1 only*.
 
 **Modeling Front**
 * [moe-lab][moelab]: *Rigorous MoE design ablations you can run at home. Notably, DeepSeek-V3 Router load-biasing turns out to be [surprisingly effective][moelab-gif]. Implemented autograd for `F.grouped_mm`, >20% [speedup][moelab-groupmm] on average.*
@@ -36,6 +36,7 @@
 [dhub]: https://hub.docker.com/repositories/vuiseng9
 [hf]: https://huggingface.co/vuiseng9
 [mlperf-t5.1-rd]: https://github.com/vuiseng9/mlperf-t5.1-rundown
+[mlperf-t6.0-rd]: https://github.com/vuiseng9/mlperf-t6.0-rundown
 [nv4f_mx8b_pr]: https://github.com/vuiseng9/TransformerEngine/pull/5
 [faster-qat]: https://github.com/vuiseng9/faster-qat
 [moelab]: https://github.com/vuiseng9/moe-lab
