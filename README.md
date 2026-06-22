@@ -1,6 +1,7 @@
 **Distributed & Parallel**
 * [Megatron, Transformed!][mtuts] *A Hands-on Tutorial on Replicating Empirical Trends in Distributed Training and Model Parallelism. 60+ runs across DP → ZeRO → TP → SP → CP → PP → VPP → EP.* 
 * MLPerf Training Rundowns: [v5.1 (Nov'25)][mlperf-t5.1-rd]  on *Llama 3.1-8B, Flux.1*, and [v6.0 (June'26)][mlperf-t6.0-rd] on newly-added MoE *DeepSeek-V3, GPT-OSS*.
+* [*(In Progress)*][ep-comm] GPU-Initiated EP Comm: MoE dispatch/combine with PyTorch Symmetric Memory. 
 
 **Narrow Precision Training**
 * [Quantized Training in FP4(8)][qt]: *Concepts and Pytorch Implementation using cuBLASLt and Microxcaling.*
@@ -42,3 +43,4 @@
 [moelab-gif]: https://github.com/vuiseng9/moe-lab/blob/main/assets/compare_lb_strategy_heatmaps.gif
 [moelab-groupmm]: https://github.com/vuiseng9/moe-lab/blob/main/assets/grouped_vs_looped_mm.png
 [nncf-mvmt]: https://github.com/openvinotoolkit/nncf/blob/release_v2190/src/nncf/experimental/torch/sparsity/movement/MovementSparsity.md
+[ep-comm]: https://github.com/vuiseng9/ep-comm
