@@ -8,7 +8,7 @@
 * PoC [nvfp4 forward + mxfp8 backward recipe][nv4f_mx8b_pr] in *Transformer Engine*, *[faster][faster-qat]* than nvfp4-QAT.
 
 **Modeling Front**
-* [moe-lab][moelab]: *Rigorous MoE design ablations you can run at home. Notably, DeepSeek-V3 Router load-biasing turns out to be [surprisingly effective][moelab-gif]. Implemented autograd for `F.grouped_mm`, >20% [speedup][moelab-groupmm] on average.*
+* [moe-lab][moelab]: *25+ design ablations you can run at home. Notably, DeepSeek-V3 load-balance biasing turns out to be [surprisingly effective][moelab-gif]. Autograded `grouped_mm` speeds up [>30%][moelab-groupmm] on average. Ablated [LatentMoE][lmoe-lab], a 2026 technique used in Nemotron-3, MAI, Kimi K3.*
   
 **Model Optimization for Efficient Inference**
 * Post-Training Statistical Calibration for Higher Activation Sparsity,
@@ -44,3 +44,4 @@
 [moelab-groupmm]: https://github.com/vuiseng9/moe-lab/blob/main/assets/grouped_vs_looped_mm.png
 [nncf-mvmt]: https://github.com/openvinotoolkit/nncf/blob/release_v2190/src/nncf/experimental/torch/sparsity/movement/MovementSparsity.md
 [symmem-ep]: https://github.com/vuiseng9/symmem-ep
+[lmoe-lab]: https://github.com/vuiseng9/moe-lab#latentmoe-for-efficiency
